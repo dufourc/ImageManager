@@ -1,23 +1,10 @@
 // @flow
 
 import { StyleSheet } from 'react-native';
-import theme from 'ImageManager/src/theme';
 
 export default StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  welcome: {
-    ...theme.fonts.header,
-    textAlign: 'center',
-    margin: theme.grid.x1,
-  },
-  instructions: {
-    ...theme.fonts.default,
-    textAlign: 'center',
-    color: theme.colors.darkGray,
-    marginBottom: theme.grid.x1,
-  },
+  container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
+  rowContainer: { flexDirection: 'row' },
+  textContainer: { flex: 1, justifyContent: 'center', alignItems: 'center' },
+  image: { width: 150, height: 150 },
 });
