@@ -18,7 +18,9 @@ export default class Camera extends Component {
     this.camera
       .capture()
       .then(image => {
-        console.log(image.path);
+        this.props.navigation.navigate('captureResult', {
+          imagePath: image.path,
+        });
       })
       .catch(err => console.error(err));
   };

@@ -15,8 +15,11 @@ export default StackNavigator(
     camera: {
       screen: Pages.Camera,
     },
+    captureResult: {
+      screen: Pages.CaptureResult,
+    },
   },
   {
-    initialRouteName: 'home',
+    initialRouteName: 'camera',
   }
 );
