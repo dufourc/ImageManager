@@ -12,6 +12,9 @@ export default StackNavigator(
     imageGallery: {
       screen: Pages.ImageGallery,
     },
+    camera: {
+      screen: Pages.Camera,
+    },
   },
   {
     initialRouteName: 'home',

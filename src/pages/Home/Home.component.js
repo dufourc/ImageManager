@@ -22,16 +22,27 @@ export default class Home extends Component {
     Image.prefetch(secureURI);
   }
   goToTheImageGallery = () => this.props.navigation.navigate('imageGallery');
+  goToCamera = () => this.props.navigation.navigate('camera');
 
   render() {
     return (
       <Page>
         <View style={styles.container}>
-          <Button
-            color="blue"
-            title={'Go to the image gallery'}
-            onPress={this.goToTheImageGallery}
-          />
+          <View style={styles.buttonContainer}>
+            <Button
+              color="blue"
+              title={'Go to the image gallery'}
+              onPress={this.goToTheImageGallery}
+            />
+          </View>
+          <View style={styles.buttonContainer}>
+            <Button
+              style={styles.buttonContainer}
+              color="red"
+              title={'Go to the camera'}
+              onPress={this.goToCamera}
+            />
+          </View>
         </View>
       </Page>
     );
